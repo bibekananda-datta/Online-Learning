@@ -1,6 +1,10 @@
 # Online-Learning
 Repository of MATLAB functions and scripts for online learning algorithms.
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 2dd9fb9046f7b49ea84bc175ad18bee97b4115d6
 ## Pre-requisite
 Your computer should have some version of MATLAB installed. These codes were developed using MATLAB 2017b, but any recent version will be able to run these codes on any operating system (Windows, Linux, MacOS).
 
