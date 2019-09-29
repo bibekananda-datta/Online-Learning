@@ -8,13 +8,14 @@ disp('test program for binary classifier algorithms is running...');
 disp('loading training and testing data');
 
 %% loading and classifying training data
-traindata       = readtable('fashion-mnist_train.csv');
-xtr             = traindata(1:end,2:end);
-ytr             = traindata(1:end,1);
-xtr             = table2array(xtr);
-ytr             = table2array(ytr);
+traindata       = readtable('fashion-mnist_train.csv');     %loading csv file training data
+xtr             = traindata(1:end,2:end);                   %retrieving x data from the table
+ytr             = traindata(1:end,1);                       %retrieving y data from the table
+xtr             = table2array(xtr);                         %converting x data to array
+ytr             = table2array(ytr);                         %converting y data to array
 
-%changing the labels for binary classifier
+%given data has 10 classes. to implement and test binary classifier algorithm
+%even and odd classes are grouped seperately to obtain 2 different classes
 for i = 1:length(ytr)
     if mod(ytr(i),2) == 0
         ytr(i)  = 1;        %even number classifier label 
@@ -24,13 +25,14 @@ for i = 1:length(ytr)
 end
 
 %% loading and classifying test data
-testdata        = readtable('fashion-mnist_test.csv');
-xts             = testdata(1:end,2:end);
-yts             = testdata(1:end,1);
-xts             = table2array(xts);
-yts             = table2array(yts);
+testdata        = readtable('fashion-mnist_test.csv');      %loading csv file training data
+xts             = testdata(1:end,2:end);                    %retrieving x data from the table
+yts             = testdata(1:end,1);                        %converting x data to array
+xts             = table2array(xts);                         %converting x data to array
+yts             = table2array(yts);                         %converting y data to array
 
-%changing the labels for binary classifier
+%given data has 10 classes. to implement and test binary classifier algorithm
+%even and odd classes are grouped seperately to obtain 2 different classes
 for i = 1:length(yts)
     if mod(yts(i),2) == 0
         yts(i)  = 1;        %even number classifier label 
@@ -42,7 +44,7 @@ end
 disp('NIST data loaded');
 
 %% variable initilization
-NIter       = 50;               %no of iteration
+IterMax     = 50;               %no of iteration
 T           = 1;                %Tau for perceptron
 ftsize      = size(xtr,2);      %size of feature vector
 trsize      = size(xtr,1);      %training data size
