@@ -39,6 +39,7 @@ To learn more about the function files, please read the commments in the file re
 
 ### Test scripts
 These test scripts are designed to demonstrate the capability of function files developed for online learning.
+
 **binaryclasstest.m:** script file to test the functions developed for binary classifier.
 
 **multiclasstest.m** script file to test the functions developed for multiple classifier.
