@@ -3,7 +3,7 @@ Repository of MATLAB functions and scripts for online learning algorithms.
 <<<<<<< HEAD
 
 =======
- 
+
 >>>>>>> 2dd9fb9046f7b49ea84bc175ad18bee97b4115d6
 ## Pre-requisite
 Your computer should have some version of MATLAB installed. These codes were developed using MATLAB 2017b, but any recent version will be able to run these codes on any operating system (Windows, Linux, MacOS).
@@ -21,7 +21,7 @@ Perceptron, Passive-Aggressive, Averaged Perceptron are the algorithms used to d
 ## Description of the .m file
 
 ### Function files
-To learn more about the function files, please read the commments in the file respective files
+To learn more about the function files, please read the comments in the file respective files
 
 **binpercept.m:** Function file based on perceptron algorithm for binary classifiers.
 
@@ -35,11 +35,10 @@ To learn more about the function files, please read the commments in the file re
 
 **multipassagg.m:** Function file based on passive-aggressive algorithm for multiple classifiers.
 
-
-
 **multiavgpercept.m:** Function file based on averaged-perceptron algorithm for multiple classifiers.
 
 **multitestfun.m:** Function file to evaluate test data for multiple classifiers.
+
 
 ### Test scripts
 These test scripts are designed to demonstrate the capability of function files developed for online learning.
